@@ -23,3 +23,14 @@ COURSES = {
                     "functions", "input"}
 }
 
+def covers(data):
+    
+    new_data = data
+    a = 0
+    for i in new_data.values():
+        y = set(i)
+        print(a)
+        a = a + 1
+    var_\ + a = y
+
+covers(COURSES)
