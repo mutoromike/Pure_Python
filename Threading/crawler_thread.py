@@ -1,12 +1,16 @@
 import http.client
 import threading
 import logging
-logging.basicConfig(level=logging.INFO, format='(%(threadName)-10s) %(message)s', )
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="(%(threadName)-10s) %(message)s",
+)
 
 
 def save(html, file_absolute_path):
     logging.info("saving {} bytes to {}".format(len(html), file_absolute_path))
-    with open(file_absolute_path, 'wb+') as file:
+    with open(file_absolute_path, "wb+") as file:
         file.write(html)
         file.flush()
 
@@ -48,6 +52,8 @@ def __main__():
         continue_input = input("add another? (y/N) ") == "y"
     for t in threads:
         t.start()
+
+
 # t.join()
 
 
