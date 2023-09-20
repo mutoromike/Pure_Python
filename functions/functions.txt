@@ -1,0 +1,23 @@
+1. Higher order functions
+ - Functions that take in other functions as inputs, or return other functions
+ or function objects.
+
+ Example: Returning a function objects
+ inner() is the inner function in this case, and outer() is our higher-order function.
+
+ def outer():
+    def inner():
+        print("Inner Function")
+    return inner
+
+func = outer()
+func
+print(func)
+
+In the example above, calling outer() will return outer.inner(), i.e. the inner()
+function object as shown below;
+
+Inner Function
+<function outer.<locals>.inner at 0x10457f370>
+
+From above, it is evident that the global function is just a reference to the inner function.
