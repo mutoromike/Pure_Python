@@ -4,7 +4,6 @@ def power(exponent):
 
     return inner
 
-
 square = power(2)
 cube = power(3)
 
