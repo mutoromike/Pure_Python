@@ -14,6 +14,10 @@ class y(x):
 if you call y.do_y(), the one in y class will be executed
 
 2. Polymorphism: One thing that can take many forms.
+Polymorphism can be implemented by method overloading or method overriding.
+Overriding
+This is a scenario in which a method that was already defined in the parent class
+is defined in the child class, as described above. 
 
 3. Slots, defined as __slots__ = ("slot1", "slot2", ), are used to reduce memory usage when dealing with
 classes. 
